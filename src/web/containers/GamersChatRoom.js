@@ -6,12 +6,13 @@ import {connect} from 'react-redux';
 
 import Application from '../components/Application';
 
-
 const ChatRoomContainer = styled.div`
   display: flex;
   width: 95%;
   height: 95%;
-  margin: 5;
+  margin: 2.5%;
+  border: 1px solid #000000;
+  background-color: white;
 `;
 
 class GamersChatRoom extends Component {
