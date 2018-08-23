@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { injectGlobal, ThemeProvider } from "styled-components";
 
+import GamersChatRoom from "../web/containers/GamersChatRoom";
+
 injectGlobal`
   html {
     background-color: #e6e6e6;
@@ -15,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <div className='test'>Something</div>
+        <GamersChatRoom />
       </ThemeProvider>
     );
   }
