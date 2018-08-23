@@ -4,6 +4,8 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
+import { UL } from '../../styles';
+
 class UsersList extends Component {
 
     constructor(props) {
@@ -13,9 +15,9 @@ class UsersList extends Component {
     render() {
        
         return (
-            <div className="store-body">
+            <UL>
                 UserList here
-            </div>
+            </UL>
         )
     }
 }

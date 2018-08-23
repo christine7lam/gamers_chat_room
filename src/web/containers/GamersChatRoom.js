@@ -4,7 +4,8 @@ import React, {Component, PropTypes} from 'react';
 import { ChatRoomContainer } from '../../styles'
 import {connect} from 'react-redux';
 
-import Application from '../components/Application';
+import ChatRoom from '../components/ChatRoom';
+import UsersList from '../components/UsersList';
 
 class GamersChatRoom extends Component {
 
@@ -15,7 +16,8 @@ class GamersChatRoom extends Component {
     render() {
         return (
             <ChatRoomContainer>
-                <Application />
+                <ChatRoom />
+                <UsersList />
             </ChatRoomContainer>
         );
     }

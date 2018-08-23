@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const ChatRoomContainer = styled.div`
-  display: flex;
+  display: table;
   flex-flow: column;
   width: 95%;
   height: 95%;
@@ -12,7 +12,14 @@ export const ChatRoomContainer = styled.div`
   background-color: white;
 `;
 
-export const UsersList = styled.div`
+export const CR = styled.div`
+  float: left;
+  width: 70%;
+  height: 400px;
+`;
+
+export const UL = styled.div`
+    float: left;
     width: 30%;
-    height: 90%;
+    height: 500px;
 `;

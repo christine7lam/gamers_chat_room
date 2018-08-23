@@ -4,7 +4,9 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-class Application extends Component {
+import { CR } from '../../styles';
+
+class ChatRoom extends Component {
 
     constructor(props) {
         super(props);
@@ -13,9 +15,9 @@ class Application extends Component {
     render() {
        
         return (
-            <div className="store-body">
+            <CR>
                 just a chat room now
-            </div>
+            </CR>
         )
     }
 }
@@ -29,4 +31,4 @@ class Application extends Component {
 // };
 
 //export default connect(mapStateToProps, mapDispatchToProps)(Application);
-export default Application;
+export default ChatRoom;
