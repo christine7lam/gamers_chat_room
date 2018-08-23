@@ -1,7 +1,7 @@
 'use strict'
 
 import React, {Component, PropTypes} from 'react';
-import { ChatRoomContainer } from '../styles'
+import { ChatRoomContainer } from '../../styles'
 import {connect} from 'react-redux';
 
 import Application from '../components/Application';

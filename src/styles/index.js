@@ -11,3 +11,8 @@ export const ChatRoomContainer = styled.div`
   border: 1px solid #000000;
   background-color: white;
 `;
+
+export const UsersList = styled.div`
+    width: 30%;
+    height: 90%;
+`;
