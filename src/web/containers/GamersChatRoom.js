@@ -1,19 +1,10 @@
 'use strict'
 
 import React, {Component, PropTypes} from 'react';
-import styled from "styled-components";
+import { ChatRoomContainer } from '../styles'
 import {connect} from 'react-redux';
 
 import Application from '../components/Application';
-
-const ChatRoomContainer = styled.div`
-  display: flex;
-  width: 95%;
-  height: 95%;
-  margin: 2.5%;
-  border: 1px solid #000000;
-  background-color: white;
-`;
 
 class GamersChatRoom extends Component {
 
@@ -39,3 +30,4 @@ GamersChatRoom.propTypes = {
 // Wrap the component to inject dispatch and state into it
 //export default connect(select)(GamersChatRoom);
 export default GamersChatRoom;
+
