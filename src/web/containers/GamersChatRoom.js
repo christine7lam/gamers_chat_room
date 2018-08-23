@@ -1,9 +1,18 @@
 'use strict'
 
 import React, {Component, PropTypes} from 'react';
+import styled from "styled-components";
 import {connect} from 'react-redux';
 
 import Application from '../components/Application';
+
+
+const ChatRoomContainer = styled.div`
+  display: flex;
+  width: 95%;
+  height: 95%;
+  margin: 5;
+`;
 
 class GamersChatRoom extends Component {
 
@@ -13,9 +22,9 @@ class GamersChatRoom extends Component {
 
     render() {
         return (
-            <div className="store">
+            <ChatRoomContainer>
                 <Application />
-            </div>
+            </ChatRoomContainer>
         );
     }
 }

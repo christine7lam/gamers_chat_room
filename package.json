@@ -10,9 +10,6 @@
   "author": "hei pak lam",
   "license": "MIT",
   "dependencies": {
-    "@paciolan/primitives": "^0.3.14",
-    "@paciolan/tooltip": "^0.1.0",
-    "@paciolan/utilities": "^0.2.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-dropzone": "^4.3.0",
