@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import { CR } from '../../styles';
+import { Chatroom } from '../../styles';
 
 class ChatRoom extends Component {
 
@@ -15,9 +15,9 @@ class ChatRoom extends Component {
     render() {
        
         return (
-            <CR>
+            <Chatroom>
                 just a chat room now
-            </CR>
+            </Chatroom>
         )
     }
 }

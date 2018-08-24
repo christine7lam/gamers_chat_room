@@ -4,8 +4,8 @@ import React, {Component, PropTypes} from 'react';
 import { ChatRoomContainer } from '../../styles'
 import {connect} from 'react-redux';
 
-import ChatRoom from '../components/ChatRoom';
-import UsersList from '../components/UsersList';
+import ChatRoom from './ChatRoom';
+import UsersList from './UsersList';
 
 class GamersChatRoom extends Component {
 

@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import { UL } from '../../styles';
+import { Userlist } from '../../styles';
 
 class UsersList extends Component {
 
@@ -15,9 +15,9 @@ class UsersList extends Component {
     render() {
        
         return (
-            <UL>
+            <Userlist>
                 UserList here
-            </UL>
+            </Userlist>
         )
     }
 }

@@ -2,6 +2,7 @@
 
 import styled from "styled-components";
 
+// Main container style
 export const ChatRoomContainer = styled.div`
   display: table;
   flex-flow: column;
@@ -12,14 +13,28 @@ export const ChatRoomContainer = styled.div`
   background-color: white;
 `;
 
-export const CR = styled.div`
+// Chat room style
+export const Chatroom = styled.div`
   float: left;
-  width: 70%;
-  height: 400px;
+  width: 66%;
+  height: 500px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin-top: 1.5%;
+  margin-left: 2.5%;
 `;
 
-export const UL = styled.div`
+// User list style
+export const Userlist = styled.div`
     float: left;
-    width: 30%;
-    height: 500px;
+    width: 27%;
+    height: 600px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin: 1.5%;
+`;
+
+// Dialog Box style
+export const Dialogbox = styled.div`
+
 `;
