@@ -1,11 +1,12 @@
 'use strict'
 
 import React, {Component, PropTypes} from 'react';
-import { ChatRoomContainer } from '../../styles'
+import { ChatRoomContainer, ChatContainer } from '../../styles'
 import {connect} from 'react-redux';
 
 import ChatRoom from './ChatRoom';
 import UsersList from './UsersList';
+import DialogBox from './DialogBox';
 
 class GamersChatRoom extends Component {
 
@@ -16,7 +17,10 @@ class GamersChatRoom extends Component {
     render() {
         return (
             <ChatRoomContainer>
-                <ChatRoom />
+                <ChatContainer>
+                    <ChatRoom />
+                    <DialogBox />
+                </ChatContainer>
                 <UsersList />
             </ChatRoomContainer>
         );
