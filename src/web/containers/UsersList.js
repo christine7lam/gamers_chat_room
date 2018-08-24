@@ -5,6 +5,8 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
 import { Userlist } from '../../styles';
+import UserIcon from "../components/UserIcon";
+import Status from '../components/Status';
 
 class UsersList extends Component {
 
@@ -16,7 +18,8 @@ class UsersList extends Component {
        
         return (
             <Userlist>
-                UserList here
+                <Status />
+                <UserIcon />
             </Userlist>
         )
     }
