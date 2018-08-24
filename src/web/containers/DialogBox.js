@@ -16,7 +16,9 @@ class DialogBox extends Component {
        
         return (
             <Dialogbox>
-                You can start your chat here
+                <label>UserName</label>
+                <input type="text"></input>
+                <button name="Send" />
             </Dialogbox>
         )
     }
