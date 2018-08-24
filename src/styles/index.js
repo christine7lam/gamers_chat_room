@@ -49,6 +49,14 @@ export const Userlist = styled.div`
     padding: 10px;
 `;
 
+// User box 
+export const Userbox = styled.div`
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  box-sizing: border-box;
+`;
+
 // Status 
 export const StatusBox = styled.div`
    float: left;
@@ -56,6 +64,8 @@ export const StatusBox = styled.div`
    width: 20px;
    border-radius: 50%;
    background-color: red;
+   margin-right: 5px;
+   margin-top: 14px;
 `;
 
 // User Img
@@ -63,5 +73,17 @@ export const UserImg = styled.div`
     float: left;
     height: 50px;
     width: 50px;  
+    margin-right: 5px;
+`;
+
+// User name
+export const Username = styled.div`
+    float: left;
+    height: 50px;
+    width: 90px;
+    color: #000000;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    margin-top: 10px;
 `;
 

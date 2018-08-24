@@ -4,9 +4,10 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import { Userlist } from '../../styles';
-import UserIcon from "../components/UserIcon";
+import { Userlist, Userbox} from '../../styles';
+import UserIcon from '../components/UserIcon';
 import Status from '../components/Status';
+import UserName from '../components/UserName';
 
 class UsersList extends Component {
 
@@ -18,8 +19,11 @@ class UsersList extends Component {
        
         return (
             <Userlist>
-                <Status />
-                <UserIcon />
+                <Userbox>
+                    <Status />
+                    <UserIcon />
+                    <UserName />
+                </Userbox>
             </Userlist>
         )
     }

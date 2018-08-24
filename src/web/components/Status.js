@@ -14,7 +14,6 @@ class Status extends Component {
        
         return (
             <StatusBox>
-                Active
             </StatusBox>
         )
     }
