@@ -87,3 +87,26 @@ export const Username = styled.div`
     margin-top: 10px;
 `;
 
+// Chat Name Label
+export const ChatNameLabel = styled.div`
+  float: left;
+  width: 15%;
+  height: 30%;
+  margin-right: 1%;
+`;
+
+// Chat Text Box
+export const ChatTextBox = styled.input`
+  float: left;
+  width: 70%;
+  height: 30%;
+  margin-right: 1%;
+`;
+
+// Chat Send Button
+export const ChatSendBtn = styled.button`
+  float: left;
+  width: 11%;
+  height: 30%;
+`;
+

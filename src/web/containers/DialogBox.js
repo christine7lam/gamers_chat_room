@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import { Dialogbox } from '../../styles';
+import { Dialogbox, ChatTextBox, ChatNameLabel, ChatSendBtn } from '../../styles';
 
 class DialogBox extends Component {
 
@@ -16,9 +16,9 @@ class DialogBox extends Component {
        
         return (
             <Dialogbox>
-                <label>UserName</label>
-                <input type="text"></input>
-                <button name="Send" />
+                <ChatNameLabel>UserName</ChatNameLabel>
+                <ChatTextBox type="text"></ChatTextBox>
+                <ChatSendBtn name="Send" />
             </Dialogbox>
         )
     }
