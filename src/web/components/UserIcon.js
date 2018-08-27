@@ -15,7 +15,7 @@ class UserIcon extends Component {
        
         return (
             <UserImg>
-                <img src={ userImage } width='50px;' height='50px;' />
+                <img src={ userImage } width='100%' height='100%' />
             </UserImg>
         )
     }

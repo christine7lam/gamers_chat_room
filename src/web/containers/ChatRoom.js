@@ -2,9 +2,9 @@
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import _ from 'lodash';
 
-import { Chatroom } from '../../styles';
+import { Chatroom, ChatDisplayUserName, ChatDisplayMessage, ChatDisplayWrapper} from '../../styles';
 
 class ChatRoom extends Component {
 
@@ -13,22 +13,25 @@ class ChatRoom extends Component {
     }
 
     render() {
-       
         return (
             <Chatroom>
-                just a chat room now
+                {
+                    _.map(this.props.app.chatlist, (item, index) => {
+                        return (
+                            <ChatDisplayWrapper key={index}>
+                                <ChatDisplayUserName>John Doe</ChatDisplayUserName>
+                                <ChatDisplayMessage>{item}</ChatDisplayMessage>
+                            </ChatDisplayWrapper>
+                        )
+                    })  
+                }
             </Chatroom>
         )
     }
 }
 
-// const mapStateToProps = store => {
-//     return store;
-// };
+const mapStateToProps = store => {
+    return store;
+};
 
-// const mapDispatchToProps = dispatch => {
-//     return dispatch;
-// };
-
-//export default connect(mapStateToProps, mapDispatchToProps)(Application);
-export default ChatRoom;
+export default connect(mapStateToProps)(ChatRoom);

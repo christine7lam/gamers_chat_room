@@ -41,7 +41,7 @@ class DialogBox extends Component {
         return (
             <Dialogbox>
                 <ChatNameLabel>UserName</ChatNameLabel>
-                <ChatTextBox type="text" onChange={this.updateChat} value={this.state.chat} placeholder="Start your chat here testing" autoFocus maxlength="200"></ChatTextBox>
+                <ChatTextBox type="text" onChange={this.updateChat} value={this.state.chat} placeholder="Start your chat here" autoFocus maxlength="200"></ChatTextBox>
                 <ChatSendBtn name="Send" onClick={this.addChat} onKeyPress={this.addChat}>Send</ChatSendBtn>
             </Dialogbox>
         )
@@ -61,4 +61,3 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(DialogBox);
-//export default DialogBox;

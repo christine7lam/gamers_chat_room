@@ -27,6 +27,37 @@ export const Chatroom = styled.div`
   border-bottom: 1px solid #000000;
   box-sizing: border-box;
   margin: 1.5% 0 1.5% 1.5%;
+  padding: 20px;
+`;
+
+// Chat Display Wrapper
+export const ChatDisplayWrapper = styled.div`
+  position: aboslute;
+  bottom: 23%;
+  width: 100%;
+  height: auto;
+`;
+
+// Chat Display Username
+export const ChatDisplayUserName = styled.div`
+  float: left;
+  width: 20%;
+  height: 30px;
+  margin-right: 10px;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+`;
+
+// Chat Display Message
+export const ChatDisplayMessage = styled.div`
+  float:left;
+  width: 70%;
+  height: 30px;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  color: #000;
 `;
 
 // Dialog Box style
@@ -36,6 +67,34 @@ export const Dialogbox = styled.div`
    box-sizing: border-box;
    margin: 0 0 1.5% 1.5%;
 
+`;
+
+// Dialog Name Label
+export const ChatNameLabel = styled.div`
+  float: left;
+  width: 15%;
+  height: 30%;
+  margin-right: 1%;
+  margin-top: 13px;
+  text-align: right;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+`;
+
+// Dialog Text Box
+export const ChatTextBox = styled.input`
+  float: left;
+  width: 70%;
+  height: 30%;
+  margin-right: 1%;
+`;
+
+// Dialog Send Button
+export const ChatSendBtn = styled.button`
+  float: left;
+  width: 11%;
+  height: 30%;
+  margin-top: 3px;
 `;
 
 // User list style
@@ -74,7 +133,7 @@ export const StatusBox = styled.div`
 // User Img
 export const UserImg = styled.div`
     float: left;
-    height: 40px;
+    height: 100%;
     width: 30%;  
     margin-right: 5px;
 `;
@@ -90,31 +149,7 @@ export const Username = styled.div`
     margin-top: 10px;
 `;
 
-// Chat Name Label
-export const ChatNameLabel = styled.div`
-  float: left;
-  width: 15%;
-  height: 30%;
-  margin-right: 1%;
-  margin-top: 13px;
-  text-align: right;
-  font-family: arial, sans-serif;
-  font-size: 12px;
-`;
 
-// Chat Text Box
-export const ChatTextBox = styled.input`
-  float: left;
-  width: 70%;
-  height: 30%;
-  margin-right: 1%;
-`;
 
-// Chat Send Button
-export const ChatSendBtn = styled.button`
-  float: left;
-  width: 11%;
-  height: 30%;
-  margin-top: 3px;
-`;
+
 
