@@ -4,8 +4,8 @@ Gamers' Chat Room
 
 ## Getting Started
 
-npm install
 npm start
+
 
 ### Prerequisites
 N/A
