@@ -17,8 +17,8 @@ class DialogBox extends Component {
         return (
             <Dialogbox>
                 <ChatNameLabel>UserName</ChatNameLabel>
-                <ChatTextBox type="text"></ChatTextBox>
-                <ChatSendBtn name="Send" />
+                <ChatTextBox type="text" placeholder="Start your chat here" autofocus maxlength="200"></ChatTextBox>
+                <ChatSendBtn name="Send">Send</ChatSendBtn>
             </Dialogbox>
         )
     }
