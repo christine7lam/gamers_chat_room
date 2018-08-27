@@ -14,8 +14,8 @@ class UserName extends Component {
        
         return (
             <Username>
-                <div>First Name</div>
-                <div>Last Name</div>
+                <div>John</div>
+                <div>Doe</div>
             </Username>
         )
     }

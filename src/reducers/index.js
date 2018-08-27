@@ -13,7 +13,7 @@ function chatReducer(state = initialState, action) {
     switch (action.type) {
         case types.ADD_CHAT: {
             let newState = {...state};
-            newState.chatlist.push(action.data.chat);
+            newState.chatlist.push(action.data);
             return newState;
         }
         default:

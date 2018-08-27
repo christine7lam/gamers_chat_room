@@ -15,15 +15,15 @@ class DialogBox extends Component {
 
     addChat = chat => {
         this.props.addChat();
-    }
+      }
 
     render() {
        
         return (
             <Dialogbox>
                 <ChatNameLabel>UserName</ChatNameLabel>
-                <ChatTextBox type="text" placeholder="Start your chat here" autoFocus maxlength="200"></ChatTextBox>
-                <ChatSendBtn name="Send" onclick={addChat}>Send</ChatSendBtn>
+                <ChatTextBox type="text" placeholder="Start your chat here testing" autoFocus maxlength="200"></ChatTextBox>
+                <ChatSendBtn name="Send" onClick={this.addChat}>Send</ChatSendBtn>
             </Dialogbox>
         )
     }

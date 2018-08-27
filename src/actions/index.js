@@ -2,9 +2,11 @@
  * Action types
  ***********/
 
- import types from '../const/index';
+ import  * as cont from '../const/index';
 
-export const addChat = chat => ({
-  type: types.addChat,
-  chat
-});
+export const addChat = chat => {
+    return {
+        type: cont.ADD_CHAT,
+        data: chat
+    }
+}
