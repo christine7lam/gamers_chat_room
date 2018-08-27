@@ -11,19 +11,38 @@ class DialogBox extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            chat: ""
+        }
     }
 
-    addChat = chat => {
-        this.props.addChat();
-      }
+    addChat = event => {
+        console.log(event);
+        if (event.key === 'Enter' || event.type === 'click') {
+            this.props.addChat(this.state.chat);
+            this.clearChat();
+        }
+    }
+
+    updateChat = event => {
+        this.setState({
+            chat: event.target.value
+        })
+    }
+
+    clearChat = () => {
+        this.setState({
+            chat: ""
+        })
+    }
 
     render() {
        
         return (
             <Dialogbox>
                 <ChatNameLabel>UserName</ChatNameLabel>
-                <ChatTextBox type="text" placeholder="Start your chat here testing" autoFocus maxlength="200"></ChatTextBox>
-                <ChatSendBtn name="Send" onClick={this.addChat}>Send</ChatSendBtn>
+                <ChatTextBox type="text" onChange={this.updateChat} value={this.state.chat} placeholder="Start your chat here testing" autoFocus maxlength="200"></ChatTextBox>
+                <ChatSendBtn name="Send" onClick={this.addChat} onKeyPress={this.addChat}>Send</ChatSendBtn>
             </Dialogbox>
         )
     }
