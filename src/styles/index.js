@@ -79,6 +79,7 @@ export const ChatNameLabel = styled.div`
   text-align: right;
   font-family: arial, sans-serif;
   font-size: 12px;
+  font-weight: bold;
 `;
 
 // Dialog Text Box
@@ -120,7 +121,7 @@ export const Userbox = styled.div`
 export const StatusBox = styled.div`
    float: left;
    height: 50%;
-   width: 10%;
+   width: 18px;
    border-radius: 50%;
    background-color: red;
    margin-right: 5px;

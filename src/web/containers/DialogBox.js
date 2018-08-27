@@ -40,7 +40,7 @@ class DialogBox extends Component {
        
         return (
             <Dialogbox>
-                <ChatNameLabel>UserName</ChatNameLabel>
+                <ChatNameLabel>John Doe</ChatNameLabel>
                 <ChatTextBox type="text" onChange={this.updateChat} value={this.state.chat} placeholder="Start your chat here" autoFocus maxlength="200"></ChatTextBox>
                 <ChatSendBtn name="Send" onClick={this.addChat} onKeyPress={this.addChat}>Send</ChatSendBtn>
             </Dialogbox>
