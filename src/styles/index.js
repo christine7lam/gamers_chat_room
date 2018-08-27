@@ -96,8 +96,10 @@ export const ChatNameLabel = styled.div`
   width: 15%;
   height: 30%;
   margin-right: 1%;
-  margin-top: 10px;
+  margin-top: 13px;
   text-align: right;
+  font-family: arial, sans-serif;
+  font-size: 12px;
 `;
 
 // Chat Text Box

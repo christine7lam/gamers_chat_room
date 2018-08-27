@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
 import { Dialogbox, ChatTextBox, ChatNameLabel, ChatSendBtn } from '../../styles';
+import { addChat } from '../../actions/index';
 
 class DialogBox extends Component {
 
@@ -12,25 +13,33 @@ class DialogBox extends Component {
         super(props);
     }
 
+    addChat = chat => {
+        this.props.addChat();
+    }
+
     render() {
        
         return (
             <Dialogbox>
                 <ChatNameLabel>UserName</ChatNameLabel>
-                <ChatTextBox type="text" placeholder="Start your chat here" autofocus maxlength="200"></ChatTextBox>
-                <ChatSendBtn name="Send">Send</ChatSendBtn>
+                <ChatTextBox type="text" placeholder="Start your chat here" autoFocus maxlength="200"></ChatTextBox>
+                <ChatSendBtn name="Send" onclick={addChat}>Send</ChatSendBtn>
             </Dialogbox>
         )
     }
 }
 
-// const mapStateToProps = store => {
-//     return store;
-// };
+const mapStateToProps = store => {
+    return {
+        chatlist: store.app.chatlist
+    };
+};
 
-// const mapDispatchToProps = dispatch => {
-//     return dispatch;
-// };
+const mapDispatchToProps = dispatch => {
+    return {
+        addChat: bindActionCreators(addChat, dispatch)
+    };
+};
 
-//export default connect(mapStateToProps, mapDispatchToProps)(Application);
-export default DialogBox;
+export default connect(mapStateToProps, mapDispatchToProps)(DialogBox);
+//export default DialogBox;

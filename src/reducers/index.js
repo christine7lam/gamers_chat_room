@@ -1,40 +1,29 @@
 /***********
- * Redux reducer file.
- *
- * All your reducer logic can go in this file in appReducer.
+ * Redux reducers
  ***********/
 
-//import { routerReducer } from "react-router-redux";
 import { combineReducers } from "redux";
 import * as types from "../const";
 
 const initialState = {
-    user: null,
-    completedTasks: [],
-    incompleteTasks: []
+    chatlist: []
 };
 
-function appReducer(state = initialState, action) {
+function chatReducer(state = initialState, action) {
     switch (action.type) {
-        // add your app actions here
-        case types.APP_LOGIN: {
-            return { ...state, user: action.payload.user };
-        }
-        case types.LOAD_COMPLETED_TASK : {
-            return { ...state, completedTasks: action.tasks };
-        }
-        case types.LOAD_INCOMPLETE_TASK : {
-            return { ...state, incompleteTasks: action.tasks };
+        case types.ADD_CHAT: {
+            let newState = {...state};
+            newState.chatlist.push(action.data.chat);
+            return newState;
         }
         default:
             return state;
     }
 }
 
-// combine all reducers into one main reducer
+// bundle reducers together
 const rootReducer = combineReducers({
-    app: appReducer,
-    //routing: routerReducer
+    app: chatReducer,
 });
 
 export default rootReducer;
