@@ -60,19 +60,22 @@ export const Userbox = styled.div`
 // Status 
 export const StatusBox = styled.div`
    float: left;
-   height: 20px;
-   width: 20px;
+   height: 50%;
+   width: 10%;
    border-radius: 50%;
    background-color: red;
    margin-right: 5px;
-   margin-top: 14px;
+   margin-top: 13px;
+   background-image: url('../../../public/resources/images/status.png');
+   background-size: 100px;
+   background-position: -22px 0;
 `;
 
 // User Img
 export const UserImg = styled.div`
     float: left;
-    height: 50px;
-    width: 50px;  
+    height: 40px;
+    width: 30%;  
     margin-right: 5px;
 `;
 
@@ -80,7 +83,7 @@ export const UserImg = styled.div`
 export const Username = styled.div`
     float: left;
     height: 50px;
-    width: 90px;
+    width: 45%;
     color: #000000;
     font-size: 12px;
     font-family: arial, sans-serif;
@@ -93,6 +96,8 @@ export const ChatNameLabel = styled.div`
   width: 15%;
   height: 30%;
   margin-right: 1%;
+  margin-top: 10px;
+  text-align: right;
 `;
 
 // Chat Text Box
@@ -108,5 +113,6 @@ export const ChatSendBtn = styled.button`
   float: left;
   width: 11%;
   height: 30%;
+  margin-top: 3px;
 `;
 
