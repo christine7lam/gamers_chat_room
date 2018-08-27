@@ -31,9 +31,7 @@ export const Chatroom = styled.div`
 `;
 
 // Chat Display Wrapper
-export const ChatDisplayWrapper = styled.div`
-  position: aboslute;
-  bottom: 23%;
+export const ChatDisplayWrapper = styled.div`  
   width: 100%;
   height: auto;
 `;
@@ -135,7 +133,7 @@ export const StatusBox = styled.div`
 export const UserImg = styled.div`
     float: left;
     height: 100%;
-    width: 30%;  
+    width: 20%;  
     margin-right: 5px;
 `;
 
